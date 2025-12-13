@@ -334,12 +334,22 @@ def map_quality_label(label: str) -> tuple:
     """Map quality label to readable format"""
     label_str = str(label).strip().upper()
     
+    # Support English labels
     if label_str in ['LABEL_0', '0', 'LOW_QUALITY', 'LOW']:
         return ('Low Quality', '🔴', 30, 'Short, uninformative reviews')
     elif label_str in ['LABEL_1', '1', 'MEDIUM_QUALITY', 'MEDIUM']:
         return ('Medium Quality', '🟡', 60, 'Average length with some details')
     elif label_str in ['LABEL_2', '2', 'HIGH_QUALITY', 'HIGH']:
         return ('High Quality', '🟢', 90, 'Detailed, informative reviews')
+    
+    # Support Chinese labels (from trained model)
+    elif '低质量' in label_str or '低' in label_str:
+        return ('Low Quality', '🔴', 30, 'Short, uninformative reviews')
+    elif '中等质量' in label_str or '中等' in label_str or '中质量' in label_str:
+        return ('Medium Quality', '🟡', 60, 'Average length with some details')
+    elif '高质量' in label_str or '高' in label_str:
+        return ('High Quality', '🟢', 90, 'Detailed, informative reviews')
+    
     else:
         return ('Unknown Quality', '⚪', 50, 'Cannot determine quality level')
 
