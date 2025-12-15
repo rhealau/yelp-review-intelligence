@@ -156,8 +156,8 @@ yelp-review-intelligence/
 
 **Course**: ISOM5240 - AI and Business Applications  
 **Institution**: HKUST Business School  
-**Semester**: Fall 2024  
-**Author**: RLau33
+**Semester**: Fall 2025  
+**Author**: Rhea Lau, Sheena Li
 
 ## 📝 Assignment Requirements
 
@@ -184,7 +184,7 @@ This project fulfills the following requirements:
 
 ## 🔗 Links
 
-- **Live App**: [https://your-app-url.streamlit.app](https://your-app-url.streamlit.app)
+- **Live App**: [[https://your-app-url.streamlit.app](https://your-app-url.streamlit.app)](https://yelp-revi-kyw2fcde9cmqx73spvxpdu.streamlit.app/)
 - **GitHub**: [https://github.com/rhealau](https://github.com/rhealau)
 - **FLAN-T5 Model**: [https://huggingface.co/RLau33/flan-t5-yelp-analysis](https://huggingface.co/RLau33/flan-t5-yelp-analysis)
 - **DistilBERT Model**: [https://huggingface.co/RLau33/yelp-review-quality-v2](https://huggingface.co/RLau33/yelp-review-quality-v2)
@@ -205,7 +205,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 For questions or feedback, please contact:
 - **GitHub**: [@rhealau](https://github.com/rhealau)
-- **Email**: Your email (optional)
 
 ---
 
